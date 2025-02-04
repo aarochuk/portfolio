@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #123524;
+  font-family: "Outfit", serif;
+  color: #E3F0AF;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin-inline: 3%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  justify-content: left;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.staticHalf,
+.dynamicHalf {
+  display: flex;
+}
+
+.staticHalf {
+  width: 40%;
+  gap: 3em;
+  align-items: center;
+}
+
+.dynamicHalf {
+  width: 60%;
+}
+
+.sections ul {
+  list-style-type: none;
+}
+
+.sections h2 {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.lastName,
+.firstName {
+  display: flex;
+  align-items: baseline;
+  color: #FBF6E9;
+}
+
+.lastName h3 {
+  font-size: 2.2em;
+  font-weight: 800;
+}
+
+.lastName {
+  margin-bottom: 1em;
+}
+
+.underName {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 2em;
+}
+
+.sections li {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.sections li:hover {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #FBF6E9;
+}
