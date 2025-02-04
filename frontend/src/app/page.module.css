@@ -10,7 +10,7 @@
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 91.5vh;
   align-items: center;
   margin-inline: 3%;
 }
@@ -84,4 +84,21 @@
   font-size: 1.3em;
   font-weight: 500;
   color: #FBF6E9;
+}
+
+.footer {
+  height: 8.5vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20%;
+  align-items: center;
+  border-top: 0.15em #E3F0AF solid;
+  margin-inline: 5%;
+}
+
+.leftFooter {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
