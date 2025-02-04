@@ -95,6 +95,7 @@
   align-items: center;
   border-top: 0.15em #E3F0AF solid;
   margin-inline: 5%;
+  position: fixed;
 }
 
 .leftFooter {

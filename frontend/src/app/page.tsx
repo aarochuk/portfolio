@@ -43,6 +43,10 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.dynamicHalf}>
+          <div className={styles.job}>
+            <p>Embedded Software Engineer Intern at Ciena</p>
+            <p>September 2025 - December 2025</p>
+          </div>
         </div>
       </div>
       <div className={styles.footer}>
