@@ -6,6 +6,7 @@ import codepen from '/public/icons/codepen.png';
 import lock from '/public/icons/padlock.png';
 import walking from '/public/icons/walking.png';
 import timemachine from '/public/icons/timemachine.png';
+import resume from '/public/files/resume.pdf';
 
 export default function Home() {
   return (
@@ -35,7 +36,9 @@ export default function Home() {
               <li>experience</li>
               <li>projects</li>
               <li>blog</li>
-              <li>resume</li>
+              <a href="/files/resume.pdf" target="_blank">
+                <li>resume</li>
+              </a>
             </ul>
           </div>
         </div>
