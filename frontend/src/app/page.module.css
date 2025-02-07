@@ -91,7 +91,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  padding-inline: 20%;
+  padding-inline: 10%;
   align-items: center;
   border-top: 0.15em #E3F0AF solid;
   margin-inline: 5%;
@@ -102,4 +102,16 @@
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+.leftFooter>select {
+  width: 10em;
+  height: 2.5em;
+  padding-inline: 1em;
+  border-radius: 1em;
+  outline: none;
+  border: 2px #E3F0AF solid;
+  background-color: #123524;
+  color: #E3F0AF;
+  font-family: "Outfit", serif;
 }

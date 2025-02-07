@@ -51,6 +51,7 @@ export default function Home() {
           <Image src={timemachine} alt="timemachine" width={40} height={40}/>
           <select>
             <option value="english">English</option>
+            <option value="french">French</option>
           </select>
         </div>
       </div>
