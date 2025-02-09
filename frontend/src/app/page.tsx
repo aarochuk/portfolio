@@ -57,7 +57,9 @@ export default function Home() {
               <a href="#projects">
                 <li>projects</li>
               </a>
-              <li>blog</li>
+              <a href="#blogs">
+                <li>blog</li>
+              </a>
               <a href="/files/resume.pdf" target="_blank">
                 <li>resume</li>
               </a>
@@ -160,8 +162,18 @@ export default function Home() {
                 Made the frontend for a website to translate a youtube video to any language of the users choice.
               </div>
             </div>
-
           </div>  
+
+          <div className={styles.blogs} id="blogs">
+            <h2>blogs</h2>
+            <div className={styles.blog}>
+              <p>Resources I used to make my personal website</p>
+              <a href="https://medium.com/@aarochuk/resources-i-used-to-make-my-personal-website-8f74001fe8a9" target="_blank">
+                <Image src={linkdark} alt="link" width={20} height={20}/>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
       <div className={styles.footer}>

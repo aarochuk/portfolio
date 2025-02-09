@@ -124,7 +124,8 @@
 }
 
 .job:hover,
-.project:hover {
+.project:hover,
+.blog:hover {
   background-color: #FBF6E9;
   border-radius: 1em;
   color: #123524;
@@ -140,13 +141,16 @@
   margin-top: 0.5em;
 }
 
-.experience {
+.experience,
+.projects,
+.blogs {
+  margin-block: 1em;
   border-bottom: 2px #E3F0AF solid;
   padding-bottom: 1em;
 }
 
-.projects {
-  margin-block: 1em;
+.blogs {
+  border-bottom: none;
 }
 
 .project {
@@ -156,6 +160,20 @@
   margin-block: 1em;
   padding: 1em;
   justify-content: center;
+}
+
+.blog {
+  height: 3em;
+  margin-block: 1em;
+  padding: 1em;
+  padding-right: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog>p {
+  font-weight: 500;
 }
 
 .projectTop {
