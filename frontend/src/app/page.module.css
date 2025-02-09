@@ -44,6 +44,7 @@
   height: 60%;
   margin-block: 5%;
   overflow: scroll;
+  flex-direction: column;
 }
 
 .sections ul {
@@ -147,4 +148,13 @@
   font-size: 0.85em;
   font-weight: 300;
   margin-top: 0.5em;
+}
+
+.experience {
+  border-bottom: 2px #E3F0AF solid;
+  padding-bottom: 1em;
+}
+
+.projects {
+  margin-top: 2em;
 }

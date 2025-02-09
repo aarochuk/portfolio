@@ -10,6 +10,8 @@ import email from '/public/icons/email.png';
 import plus from '/public/icons/plus.png';
 import dfg from '/public/icons/dfg.png';
 import uwaterloo from '/public/icons/uwaterloo.png';
+import back from '/public/icons/back.png';
+import moreback from '/public/icons/moreback.png';
 import resume from '/public/files/resume.pdf';
 
 export default function Home() {
@@ -51,7 +53,7 @@ export default function Home() {
         </div>
         <div className={styles.dynamicHalf}>
           <div className={styles.experience} id="experience">
-            <h2>Work experience</h2>
+            <h2>work experience</h2>
             <div className={styles.job}>
               <Image src={ciena} alt="ciena-logo" width={40} height={40}/>
               <div className={styles.companyDetails}>
@@ -89,16 +91,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.projects}>
+
+            <h2>projects</h2>
+          </div>  
         </div>
       </div>
       <div className={styles.footer}>
         <p>&copy; Andrew Arochukwu 2025</p>
         <div className={styles.leftFooter}>
-          <Image src={timemachine} alt="timemachine" width={40} height={40}/>
-          <select>
-            <option value="english">English</option>
-            <option value="french">French</option>
-          </select>
+          <a href="https://andrewarochukwuv2.netlify.app" target="_blank">
+              <Image src={back} alt="previous website" width={30} height={30}/>
+            </a>
+            <a href="https://andrewarochukwuv1.netlify.app" target="_blank">
+              <Image src={moreback} alt="previous previous website" width={30} height={30}/>
+            </a>
         </div>
       </div>
     </div>
