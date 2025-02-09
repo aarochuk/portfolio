@@ -146,22 +146,38 @@
 }
 
 .projects {
-  margin-top: 2em;
+  margin-block: 1em;
+}
+
+.project {
+  min-height: 3em;
+  display: flex;
+  flex-direction: column;
+  margin-block: 1em;
+  padding: 1em;
+  justify-content: center;
 }
 
 .projectTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 3em;
-  padding-inline: 1em;
-  margin-top: 1em;
 }
 
 .projectBottom {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+
   padding-inline: 1em;
   padding-bottom: 1em;
-  display: none;
+  z-index: -1;
+  width: 100%;
+}
+
+.projectBottom.opened {
+  opacity: 1;
+  display: initial;
 }
 
 .projectName {

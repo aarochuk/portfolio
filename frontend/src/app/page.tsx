@@ -22,8 +22,11 @@ import resume from '/public/files/resume.pdf';
 import { useState } from "react";
 
 export default function Home() {
-  const [color, setColor] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [expanded1, setExpanded1] = useState(false);
+  const [expanded2, setExpanded2] = useState(false);
   return (
+    <>
     <div className={styles.page}>
       <div className={styles.main}>
         <div className={styles.staticHalf}>
@@ -51,7 +54,9 @@ export default function Home() {
               <a href="#experience">
                 <li>experience</li>
               </a>
-              <li>projects</li>
+              <a href="#projects">
+                <li>projects</li>
+              </a>
               <li>blog</li>
               <a href="/files/resume.pdf" target="_blank">
                 <li>resume</li>
@@ -99,7 +104,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.projects}>
+
+          <div className={styles.projects} id="projects">
             <h2>projects</h2>
             <div className={styles.project}>
               <div className={styles.projectTop}>
@@ -113,13 +119,48 @@ export default function Home() {
                   </a>
                 </div>
                 <div className={styles.projectExpand}>
-                  <Image src={plus} alt="expand" width={20} height={20}/>
+                  <Image src={plus} onClick={()=>setExpanded(!expanded)} alt="expand" width={20} height={20}/>
                 </div>
               </div>
-              <div className={styles.projectBottom}>
+              <div className={expanded ? styles.projectBottom.opened: styles.projectBottom}>
                  Terminal based password manager made with GO, that uses SQLite to store users encrypted passwords. 
               </div>
             </div>
+
+            <div className={styles.project}>
+              <div className={styles.projectTop}>
+                <div className={styles.projectDetails}>
+                  <p className={styles.projectName}> tuneshift </p>
+                  <a href="https://github.com/aarochuk/tuneshift" target="_blank">
+                    <Image src={githubp} alt="github" width={20} height={20}/>
+                  </a>
+                </div>
+                <div className={styles.projectExpand}>
+                  <Image src={plus} onClick={()=>setExpanded1(!expanded1)} alt="expand" width={20} height={20}/>
+                </div>
+              </div>
+              <div className={expanded1 ? styles.projectBottom.opened: styles.projectBottom}>
+                Create a spotify playlist by searching directly for a song, using an apple playlist link or using a date for the billboard hot 100.
+              </div>
+            </div>
+
+            <div className={styles.project}>
+              <div className={styles.projectTop}>
+                <div className={styles.projectDetails}>
+                  <p className={styles.projectName}> lingustream </p>
+                  <a href="https://github.com/KokYenZein/LinguaStream" target="_blank">
+                    <Image src={githubp} alt="github" width={20} height={20}/>
+                  </a>
+                </div>
+                <div className={styles.projectExpand}>
+                  <Image src={plus} onClick={()=>setExpanded2(!expanded2)} alt="expand" width={20} height={20}/>
+                </div>
+              </div>
+              <div className={expanded2 ? styles.projectBottom.opened: styles.projectBottom}>
+                Made the frontend for a website to translate a youtube video to any language of the users choice.
+              </div>
+            </div>
+
           </div>  
         </div>
       </div>
@@ -135,5 +176,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
