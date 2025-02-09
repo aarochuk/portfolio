@@ -12,7 +12,8 @@
   display: flex;
   height: 91.5vh;
   align-items: center;
-  margin-inline: 3%;
+  margin-inline: 4%;
+  gap: 10%;
 }
 
 .icons {
@@ -33,13 +34,16 @@
 }
 
 .staticHalf {
-  width: 40%;
+  width: 45%;
   gap: 3em;
   align-items: center;
 }
 
 .dynamicHalf {
-  width: 60%;
+  width: 55%;
+  height: 60%;
+  margin-block: 5%;
+  overflow: scroll;
 }
 
 .sections ul {
@@ -114,4 +118,33 @@
   background-color: #123524;
   color: #E3F0AF;
   font-family: "Outfit", serif;
+}
+
+.job {
+  display: flex;
+  gap: 1em;
+  margin-block: 1em;
+  align-items: center;
+  height: 4em;
+  padding-inline: 1em;
+}
+
+.job>img {
+  border-radius: 0.5em;
+}
+
+.job:hover {
+  background-color: #FBF6E9;
+  border-radius: 1em;
+  color: #123524;
+}
+
+.companyName {
+  font-weight: 700;
+}
+
+.companyDate {
+  font-size: 0.85em;
+  font-weight: 300;
+  margin-top: 0.5em;
 }
