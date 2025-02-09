@@ -193,7 +193,7 @@
   width: 100%;
 }
 
-.projectBottom.opened {
+.opened {
   opacity: 1;
   display: initial;
 }

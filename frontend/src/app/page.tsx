@@ -1,5 +1,4 @@
 "use client"
-
 import styles from "./page.module.css";
 import Image from 'next/image';
 import github from '/public/icons/github.png';
@@ -124,7 +123,7 @@ export default function Home() {
                   <Image src={plus} onClick={()=>setExpanded(!expanded)} alt="expand" width={20} height={20}/>
                 </div>
               </div>
-              <div className={expanded ? styles.projectBottom.opened: styles.projectBottom}>
+              <div className={expanded ? [styles.projectBottom, styles.opened]: styles.projectBottom}>
                  Terminal based password manager made with GO, that uses SQLite to store users encrypted passwords. 
               </div>
             </div>
@@ -141,7 +140,7 @@ export default function Home() {
                   <Image src={plus} onClick={()=>setExpanded1(!expanded1)} alt="expand" width={20} height={20}/>
                 </div>
               </div>
-              <div className={expanded1 ? styles.projectBottom.opened: styles.projectBottom}>
+              <div className={expanded1 ? [styles.projectBottom, styles.opened]: styles.projectBottom}>
                 Create a spotify playlist by searching directly for a song, using an apple playlist link or using a date for the billboard hot 100.
               </div>
             </div>
@@ -158,7 +157,7 @@ export default function Home() {
                   <Image src={plus} onClick={()=>setExpanded2(!expanded2)} alt="expand" width={20} height={20}/>
                 </div>
               </div>
-              <div className={expanded2 ? styles.projectBottom.opened: styles.projectBottom}>
+              <div className={expanded2 ? [styles.projectBottom, styles.opened]: styles.projectBottom}>
                 Made the frontend for a website to translate a youtube video to any language of the users choice.
               </div>
             </div>
