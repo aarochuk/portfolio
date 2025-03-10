@@ -45,6 +45,7 @@
   margin-block: 5%;
   overflow: scroll;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .sections ul {

@@ -164,10 +164,16 @@ export default function Home() {
           </div>  
 
           <div className={styles.blogs} id="blogs">
-            <h2>blogs</h2>
+            <h2>blog posts</h2>
             <div className={styles.blog}>
-              <p>Resources I used to make my personal website</p>
-              <a href="https://medium.com/@aarochuk/resources-i-used-to-make-my-personal-website-8f74001fe8a9" target="_blank">
+              <p>How I made my Personal Website</p>
+              <a href="https://medium.com/@aarochuk/how-i-made-my-personal-website-35226c9c505a" target="_blank">
+                <Image src={linkdark} alt="link" width={20} height={20}/>
+              </a>
+            </div>
+            <div className={styles.blog}>
+              <p>The GOAT Debate is over</p>
+              <a href="https://medium.com/@aarochuk/the-debate-is-over-determining-the-real-goat-of-basketball-using-statistics-2a0fbfef70d8" target="_blank">
                 <Image src={linkdark} alt="link" width={20} height={20}/>
               </a>
             </div>
